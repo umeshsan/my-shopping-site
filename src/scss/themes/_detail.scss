@@ -1,0 +1,267 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+.detail-wrapper {
+    margin-top: 3rem;
+}
+
+.detail-image-container {
+    max-width: 600px;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.detail-information-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.main-swiper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.main-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.thumb-swiper {
+    height: 100px;
+}
+
+.thumb-swiper .swiper-slide {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.thumb-swiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.thumb-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.sku-box {
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+}
+
+.sku-row {
+    margin-bottom: 15px;
+}
+
+.sku-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.sku-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sku-btn {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sku-btn.active {
+    border-color: #ff5000;
+    color: #ff5000;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+#quantity {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    height: 32px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buy-now {
+    flex: 1;
+    padding: 12px;
+    background: $blue;
+    color: $lightBlue;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: $default-transition;
+
+    &:hover {
+        color: $lightBlue;
+    }
+}
+
+.add-cart {
+    flex: 1;
+    padding: 12px;
+    background: #ffd4c2;
+    color: #ff5000;
+    border: 1px solid #ff5000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: $default-transition;
+
+    &:hover {
+        color: #ff5000;
+    }
+}
+
+.product-tabs {
+    margin-top: 40px;
+}
+
+.tab-header {
+    display: flex;
+    border-bottom: 2px solid $semiDark;
+}
+
+.tab-btn {
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: $blue;
+    font-weight: bold;
+
+    &:after {
+        content: "";
+        border-bottom: 3px solid $blue;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -2px;
+    }
+}
+
+.tab-content {
+    display: none;
+    padding: 20px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-table th,
+.spec-table td {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+.spec-table th {
+    background: #f9f9f9;
+    width: 200px;
+}
+
+.review-item,
+.qa-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.others-information {
+    background: $lightBlue;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+}
+
+.delivery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.delivery-header h3 {
+    font-size: 16px;
+}
+
+.change-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delivery-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.delivery-edit {
+    display: none;
+    margin-top: 10px;
+}
+
+.delivery-edit select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.save-btn {
+    padding: 6px 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.service-points {
+    list-style: none;
+    padding-left: 0;
+}

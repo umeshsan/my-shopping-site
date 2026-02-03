@@ -105,9 +105,9 @@
             </div>
             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 product-list-wrap">
                 <div class="col">
-                    <a href="#" class="img-box mb-4 d-block">
+                    <a href="detail.php" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p1.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p1.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -134,7 +134,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p2.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p2.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -161,7 +161,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p3.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p3.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -188,7 +188,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -215,7 +215,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -242,7 +242,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -269,7 +269,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -296,7 +296,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p1.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p1.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -323,7 +323,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -350,7 +350,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p3.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p3.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -377,7 +377,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -404,7 +404,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -431,7 +431,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -458,7 +458,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -485,7 +485,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -512,7 +512,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p3.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p3.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -539,7 +539,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -566,7 +566,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -593,7 +593,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -620,7 +620,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -647,7 +647,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -674,7 +674,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -701,7 +701,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -728,7 +728,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p3.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p3.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -755,7 +755,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -782,7 +782,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -810,7 +810,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -837,7 +837,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -864,7 +864,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -891,7 +891,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -918,7 +918,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p3.avif">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p3.avif">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -945,7 +945,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -972,7 +972,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p4.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p4.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -999,7 +999,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1026,7 +1026,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1053,7 +1053,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1080,7 +1080,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1107,7 +1107,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p5.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p5.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1134,7 +1134,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p6.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p6.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
@@ -1161,7 +1161,7 @@
                 <div class="col">
                     <a href="#" class="img-box mb-4 d-block">
                         <figure class="ratio ratio-1x1 rounded-4 overflow-hidden mb-1">
-                            <img class="aspect-ratio-cover rounded-4" src="dist/img/p7.jpg">
+                            <img class="object-fit-cover rounded-4" src="dist/img/p7.jpg">
                         </figure>
                         <div class="info-wrap">
                             <p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
