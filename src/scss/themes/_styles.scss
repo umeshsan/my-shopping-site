@@ -1,0 +1,231 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+:root {
+	--space-20: 20px;
+}
+
+// Define a media query for prefers-reduced-motion
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth !important;
+	}
+}
+
+
+// Define the base styles for the body
+body {
+	font-family: $font-family;
+	font-size: $font-size-base;
+	color: $black;
+	background: $white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-optical-sizing: auto;
+	@extend .custom-scrollbar;
+	font-weight: 500;
+	overflow-x: hidden;
+}
+
+// Define custom scrollbar styles
+.custom-scrollbar {
+	::-webkit-scrollbar {
+		width: 8px !important;
+	}
+
+	::-webkit-scrollbar:horizontal {
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		height: 8px;
+	}
+
+	// Handle
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 4px !important;
+		border-radius: 4px !important;
+		background: $black !important;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: $black !important;
+		height: 8px;
+	}
+}
+
+.text-blue {
+	color: $blue !important;
+}
+
+section {
+	clear: both;
+	--padding-y: 60px;
+	padding-block: var(--padding-y);
+
+	@include respond-to(xxl) {
+		--padding-y: 30px;
+	}
+}
+
+.form-control,
+.form-select {
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn {
+	font-size: 14px;
+}
+
+// Link and button styles
+a,
+button {
+	cursor: pointer;
+	word-break: break-word;
+	word-wrap: break-word;
+	text-decoration: none;
+	box-shadow: none;
+
+	&:hover {
+		opacity: 0.75;
+		color: $blue;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+// Text Truncation
+.line-clamp-2 {
+	@include line-clamp(2);
+}
+
+.line-clamp-3 {
+	@include line-clamp(3, 1.5rem);
+}
+
+// scroll to top
+.topTop {
+	width: 45px;
+	height: 45px;
+	background-color: $white;
+	border-radius: 12px 0 0 12px;
+	width: 46px;
+	border-width: 1px 0px 1px 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.08);
+	position: fixed;
+	right: 0;
+	bottom: 44%;
+	z-index: 999;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all ease 350ms;
+	padding: 4px;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	i {
+		font-size: 20px;
+	}
+}
+
+.custom-container {
+	--bs-gutter-x: 8rem;
+	--bs-gutter-y: 0;
+	width: 100%;
+	max-width: calc(1600px + var(--bs-gutter-x));
+	padding-right: calc(var(--bs-gutter-x) * .5);
+	padding-left: calc(var(--bs-gutter-x) * .5);
+	margin-right: auto;
+	margin-left: auto;
+	transition: $default-transition;
+
+	@include respond-to(xl) {
+		--bs-gutter-x: 2.5rem;
+	}
+}
+
+.breadcrumb {
+	--bs-breadcrumb-item-padding-x: 0.25rem;
+	padding: 20px 60px;
+	line-height: 2;
+
+	a {
+		color: #3785D0;
+
+		&:hover {
+			color: $dark;
+			opacity: 1;
+		}
+	}
+
+	span {
+		color: $dark;
+	}
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	color: #3785D0;
+}
+
+.pagination {
+	a {
+		margin-inline: 5px;
+		border-radius: 4px;
+		color: $black;
+		border: 0;
+		background: $gray;
+		padding: 8px 16px;
+
+		&.active,
+		&:hover,
+		&:focus {
+			background: $dark;
+			color: $white;
+		}
+	}
+}
+
+main {
+	padding-top: var(--headerHeight);
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(calc(25% - 50px), max-content));
+	gap: 50px;
+	justify-content: center;
+	margin-inline: auto;
+	position: relative;
+}
+
+.img-box {
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		transition: transform 0.4s ease;
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
+}
+
+#loader {
+	text-align: center;
+	padding: 20px;
+	display: none;
+}

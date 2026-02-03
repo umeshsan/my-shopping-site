@@ -1,0 +1,196 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 460px;
+    background-color: $lightBlue;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-inline: auto;
+}
+
+.login-lt-column,
+.login-rt-column {
+    flex: 1;
+    padding: 30px;
+}
+
+.login-lt-column {
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: $lightBlue;
+}
+
+.login-lt-column img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.login-lt-column p {
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.login-rt-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-toggle {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.login-toggle button {
+    flex: 1;
+    padding: 10px 0;
+    border: 0;
+    background-color: $offWhite;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-toggle button.active {
+    background-color: #fff;
+    border-bottom: 2px solid $blue;
+    color: $blue;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: $blue;
+    color: $lightBlue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.login-links a {
+    color: $blue;
+    text-decoration: none;
+}
+
+.agreement {
+    font-size: 12px;
+    color: $dark;
+    display: flex;
+    align-items: start;
+}
+
+.agreement input {
+    margin-right: 6px;
+    margin-top: 4px;
+}
+
+.agreement a {
+    color: $blue;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+
+//Forgot Password
+
+.forgot-password-container {
+    width: 400px;
+    background-color: $lightBlue;
+    padding: 30px;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.forgot-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.forgot-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: $blue;
+    color: $lightBlue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.links a {
+    color: $blue;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+//Registration
+
+.registration-container {
+    width: 400px;
+    background-color: $lightBlue;
+    padding: 30px;
+    border-radius: 10px;
+    margin-inline: auto;
+
+    .agreement {
+        margin-bottom: 30px;
+    }
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register-form input[type="checkbox"] {
+    width: auto;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: $blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}

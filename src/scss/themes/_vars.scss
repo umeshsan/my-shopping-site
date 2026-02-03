@@ -1,0 +1,35 @@
+// Import the color module from Sass
+@use "sass:color";
+
+// COLORS
+$white: #FFFFFF;
+$offWhite: #f5f5f5;
+
+$black: #000000;
+$dark: #333333;
+$semiDark: #999999;
+
+$blue: #0075c2;
+$lightBlue: #eff8fe;
+
+$gray: #D9D9D9;
+
+// FONTS STACKS
+$font-family: "Noto Sans JP",
+"Montserrat",
+serif !important;
+
+// BASE FONTS
+$font-family-base: $font-family;
+$font-size-base: 14px;
+$font-color-base: $black;
+
+.font-noto-sans {
+    font-family: "Noto Sans JP", serif !important;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", serif !important;
+}
+
+$default-transition : all ease 0.5s;

@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-9">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-3">
                             <div class="swiper heroSwiperSlider rounded-4">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -36,7 +36,7 @@
                             </div>
                             <!--swiper product-slider-->
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-3">
                             <div class="bg-gray h-100 rounded-4">
                                 <a href="#">
                                     <p class="text-center text-dark fw-semibold mb-2">Beauty Skin Care</p>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-3 mb-md-0 mb-3">
                             <div class="bg-gray h-100 rounded-4">
                                 <a href="#">
                                     <p class="text-center text-dark fw-semibold mb-2">複数注文割引</p>
@@ -54,7 +54,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-3 mb-md-0 mb-3">
                             <div class="bg-gray h-100 rounded-4">
                                 <a href="#">
                                     <p class="text-center text-dark fw-semibold mb-2">配達状況の追跡はこちら</p>
@@ -62,7 +62,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-3 mb-md-0 mb-3">
                             <div class="bg-gray h-100 rounded-4">
                                 <a href="#">
                                     <p class="text-center text-dark fw-semibold mb-2">処方箋受付窓口</p>
@@ -70,7 +70,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-3 mb-md-0 mb-3">
                             <div class="bg-gray h-100 rounded-4">
                                 <a href="#">
                                     <p class="text-center text-dark fw-semibold mb-2">郵便局留め注意事項</p>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-lg-0 mt-3">
                     <div class="login-wrapper bg-gray h-100 rounded-4">
                         <p class="text-center fs-5 text-blue fw-bold text-uppercase font-montserrat">Good morning</p>
                     </div>

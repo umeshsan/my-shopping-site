@@ -36,11 +36,14 @@
 	<div class="header-site-nav">
 		<ul class="nav justify-content-end">
 			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="me-1 bi-person-fill"></i>ログイン</a>
+				<a class="nav-link" href="login.php"><i class="me-1 bi-person-fill"></i>ログイン</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="me-1 bi-journal-check"></i>登録無料</a>
+				<a class="nav-link" href="registration.php"><i class="me-1 bi-journal-check"></i>登録無料</a>
 			</li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="me-1 bi-box-fill"></i>購入した商品</a>
+            </li>
 			<li class="nav-item">
 				<a class="nav-link" href="#"><i class="me-1 bi-cart3"></i>カート</a>
 			</li>

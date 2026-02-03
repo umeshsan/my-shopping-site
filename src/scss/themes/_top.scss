@@ -1,0 +1,82 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+.swiperSlider .swiper-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(566px, 100%);
+    padding-inline: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 999;
+    transition: width 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    pointer-events: all;
+}
+
+.bg-gray {
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.heroSwiperSlider {
+    background-color: #f5f5f5;
+    overflow: hidden;
+
+    img {
+        aspect-ratio: 1.8;
+        object-fit: cover;
+    }
+}
+
+.sc-business-entry-container {
+    /*.row .row {
+    [class*="col-"] {
+        margin-bottom: 1rem;
+    }
+}*/
+
+    figure {
+        max-height: 180px;
+    }
+}
+
+.sc-product-listing {
+    .product-catogeries {
+        a {
+            transition: $default-transition;
+            background: transparent;
+            border-radius: 6px;
+            padding: 3px 8px;
+            color: $dark;
+
+            &.active,
+            &:hover {
+                background: $blue;
+                color: $lightBlue;
+            }
+        }
+    }
+}
+
+.img-box {
+    .info-wrap {
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
+    .product-title {
+        font-size: 13px;
+    }
+}
