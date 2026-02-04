@@ -128,10 +128,10 @@
 			reset: false
 		});
 
-  	// reveal items in initially active tab
-		sr.reveal('.tab-pane.active .product-list-wrap .col', { interval: 100 });
+	// reveal items in initially active tab
+		sr.reveal('.product-list-wrap .col', { interval: 100 });
 
-  	// reveal items when tab is shown
+	// reveal items when tab is shown
 		document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tabEl => {
 			tabEl.addEventListener('shown.bs.tab', e => {
 				const targetPane = document.querySelector(e.target.dataset.bsTarget);
@@ -194,46 +194,68 @@
 
 
 <script>
-    const cartFab = document.getElementById('cartFab');
-    const cartSidebar = document.getElementById('cartSidebar');
-    const cartItems = document.getElementById('cartItems');
-    const cartSubtotal = document.getElementById('cartSubtotal');
-    const cartHeader = document.getElementById('cartHeader');
+	const cartFab = document.getElementById('cartFab');
+	const cartSidebar = document.getElementById('cartSidebar');
+	const cartItems = document.getElementById('cartItems');
+	const cartSubtotal = document.getElementById('cartSubtotal');
+	const cartHeader = document.getElementById('cartHeader');
 
 // Open / Close Sidebar
-    cartFab.addEventListener('click', () => cartSidebar.classList.add('active'));
-    document.getElementById('closeCart').addEventListener('click', () => cartSidebar.classList.remove('active'));
+	cartFab.addEventListener('click', () => cartSidebar.classList.add('active'));
+	document.getElementById('closeCart').addEventListener('click', () => cartSidebar.classList.remove('active'));
 
 // Quantity Change
-    function changeItemQty(btn, delta) {
-      const input = btn.parentElement.querySelector('input');
-      let val = parseInt(input.value) + delta;
-      if (val < 1) val = 1;
-      input.value = val;
-      updateCart();
-  }
+	function changeItemQty(btn, delta) {
+		const input = btn.parentElement.querySelector('input');
+		let val = parseInt(input.value) + delta;
+		if (val < 1) val = 1;
+		input.value = val;
+		updateCart();
+	}
 
 // Remove Item
-  function removeItem(btn) {
-      btn.closest('.cart-item').remove();
-      updateCart();
-  }
+	function removeItem(btn) {
+		btn.closest('.cart-item').remove();
+		updateCart();
+	}
 
 // Update Subtotal and Header
-  function updateCart() {
-      let subtotal = 0;
-      const items = cartItems.querySelectorAll('.cart-item');
-      items.forEach(item => {
-        const price = parseInt(item.querySelector('.item-price').innerText.replace(/[^\d]/g,''));
-        const qty = parseInt(item.querySelector('input').value);
-        subtotal += price * qty;
-    });
-      cartSubtotal.innerText = subtotal;
-      cartHeader.innerText = `Your cart (${items.length} items)`;
-  }
+	function updateCart() {
+		let subtotal = 0;
+		const items = cartItems.querySelectorAll('.cart-item');
+		items.forEach(item => {
+			const price = parseInt(item.querySelector('.item-price').innerText.replace(/[^\d]/g,''));
+			const qty = parseInt(item.querySelector('input').value);
+			subtotal += price * qty;
+		});
+		cartSubtotal.innerText = subtotal;
+		cartHeader.innerText = `Your cart (${items.length} items)`;
+	}
+
+  // Select all checkboxes
+	function toggleSelectAll(cb){
+		const checkboxes = document.querySelectorAll('.item-checkbox');
+		checkboxes.forEach(chk => chk.checked = cb.checked);
+	}
+
+// Delete selected items
+	function deleteSelected(){
+		const checkboxes = document.querySelectorAll('.item-checkbox:checked');
+		checkboxes.forEach(cb => cb.closest('tr').remove());
+		updateCart();
+	}
+
+// Voucher apply
+	function applyVoucher(){
+		const code = document.getElementById('voucherCode').value.trim();
+		let discount = 0;
+  if(code === "SAVE100") discount = 100; // example voucher
+  document.getElementById('voucherCode').dataset.value = discount;
+  updateCart();
+}
 
 // Initial update
-  updateCart();
+updateCart();
 </script>
 
 

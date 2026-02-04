@@ -73,6 +73,8 @@ section {
 
 .form-control,
 .form-select {
+    min-height: 42px;
+
     &:focus {
         box-shadow: none;
     }

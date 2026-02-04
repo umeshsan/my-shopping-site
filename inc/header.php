@@ -338,7 +338,7 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 	<i class="bi bi-arrow-bar-up" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top "></i>
 </div>
 
-<!-- Chatbot Window -->
+
 <div class="chat-widget" id="chatWidget">
 	<div class="chat-header">Chat Support</div>
 
@@ -352,7 +352,7 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 	</div>
 </div>
 
-<!-- Cart Sidebar -->
+
 <div class="cart-sidebar shadow" id="cartSidebar">
 	<!-- Header -->
 	<div class="cart-header">
@@ -360,17 +360,19 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		<button class="close-btn" id="closeCart">×</button>
 	</div>
 
-	<!-- Body -->
+
 	<div class="cart-items" id="cartItems">
-		<!-- Cart Item Example -->
+
 		<div class="cart-item">
-			<img src="dist/img/p4.jpg" alt="Product Image" class="item-img">
+			<a href="dist/img/p4.jpg" data-fancybox="gallery" data-caption="Caption #1">
+				<img src="dist/img/p4.jpg" class="item-img" />
+			</a>
 			<div class="item-details">
 				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
 				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">$80</span>
+					<span class="discounted-price fs-2 fw-bold text-danger">¥80</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="original-price text-decoration-line-through text-muted">¥100</small>
 						<small class="discount-percentage text-dark">-20%</small>
 					</span>
 				</p>
@@ -385,13 +387,15 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<img src="dist/img/p7.jpg" alt="Product Image" class="item-img">
+			<a href="dist/img/p7.jpg" data-fancybox="gallery" data-caption="Caption #1">
+				<img src="dist/img/p7.jpg" class="item-img" />
+			</a>
 			<div class="item-details">
 				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
 				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="original-price text-decoration-line-through text-muted">¥100</small>
 						<small class="discount-percentage text-dark">-10%</small>
 					</span>
 				</p>
@@ -406,13 +410,15 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<img src="dist/img/p6.jpg" alt="Product Image" class="item-img">
+			<a href="dist/img/p6.jpg" data-fancybox="gallery" data-caption="Caption #1">
+				<img src="dist/img/p6.jpg" class="item-img" />
+			</a>
 			<div class="item-details">
 				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
 				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="original-price text-decoration-line-through text-muted">¥100</small>
 						<small class="discount-percentage text-dark">-10%</small>
 					</span>
 				</p>
@@ -427,13 +433,15 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<img src="dist/img/p2.jpg" alt="Product Image" class="item-img">
+			<a href="dist/img/p2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+				<img src="dist/img/p2.jpg" class="item-img" />
+			</a>
 			<div class="item-details">
 				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
 				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="original-price text-decoration-line-through text-muted">¥100</small>
 						<small class="discount-percentage text-dark">-10%</small>
 					</span>
 				</p>
@@ -448,11 +456,13 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 	</div>
 
-	<!-- Footer -->
+
 	<div class="cart-footer">
-		<p>Subtotal: $ <span id="cartSubtotal">2000</span></p>
-		<button class="view-cart-btn">View My Cart</button>
-		<button class="checkout-btn">Go to Checkout</button>
+		<p class="d-flex align-items-center justify-content-between">Subtotal: <span class="fs-5">¥<span id="cartSubtotal">2000</span></span></p>
+		<div class="d-flex align-items-center justify-content-center gap-2">
+			<a href="cart.php" class="view-cart-btn flex-fill">View My Cart</a>
+			<a href="checkout.php" class="checkout-btn flex-fill">Go to Checkout</a>
+		</div>
 	</div>
 </div>
 

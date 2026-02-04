@@ -15,35 +15,40 @@
 		</div>
 
 		<div class="login-rt-column">
-			<div class="login-toggle">
-				<button id="passwordBtn" class="active">Password Login</button>
-				<button id="smsBtn">SMS Login</button>
-			</div>
+            <a href="index.php">
+                <figure class="text-center mb-4">
+                    <img src="dist/img/site-icon/favicon-96x96.png">
+                </figure>
+            </a>
+            <div class="login-toggle">
+                <button id="passwordBtn" class="active">Password Login</button>
+                <button id="smsBtn">SMS Login</button>
+            </div>
 
-			<form class="login-form" id="loginForm">
-				<input type="text" id="emailPhone" placeholder="Account name / email / phone number">
-				<input type="text" id="verificationCode" placeholder="Please enter the verification code" style="display: none;">
-				<input type="password" id="password" placeholder="Password">
-				<button type="submit">Log In</button>
-			</form>
+            <form class="login-form" id="loginForm">
+                <input type="text" id="emailPhone" placeholder="Account name / email / phone number">
+                <input type="text" id="verificationCode" placeholder="Please enter the verification code" style="display: none;">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Log In</button>
+            </form>
 
-			<div class="login-links">
-				<a href="forgot-password.php">Forgot your account?</a>
-				<a href="registration.php">Free Registration</a>
-			</div>
+            <div class="login-links">
+                <a href="forgot-password.php">Forgot your account?</a>
+                <a href="registration.php">Free Registration</a>
+            </div>
 
-			<div class="agreement">
-				<input type="checkbox" id="agreement">
-				<label for="agreement">
-					I have read and agree to the following agreements:
-					<a href="#">Shopping Platform Service Agreement</a>,
-					<a href="#">Privacy Policy</a>,
-					<a href="#">Legal Statement</a>, and
-					<a href="#">Client Service Agreement</a>
-				</label>
-			</div>
-		</div>
-	</div>
+            <div class="agreement">
+                <input type="checkbox" id="agreement">
+                <label for="agreement">
+                 I have read and agree to the following agreements:
+                 <a href="#">Shopping Platform Service Agreement</a>,
+                 <a href="#">Privacy Policy</a>,
+                 <a href="#">Legal Statement</a>, and
+                 <a href="#">Client Service Agreement</a>
+             </label>
+         </div>
+     </div>
+ </div>
 </main>
 <!--index-page-->
 

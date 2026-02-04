@@ -1,0 +1,47 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+/* Layout */
+.checkout-wrapper {
+
+    .form-section,
+    .summary-section {
+        padding: 2rem;
+        border-radius: 12px;
+    }
+
+    .form-section {
+        background: $offWhite;
+        flex: 2;
+    }
+
+    .summary-section {
+        background: $lightBlue;
+        flex: 1;
+    }
+
+    /* Headings */
+    .form-section h4,
+    .summary-section h4 {
+        color: $blue;
+    }
+
+    /* Checkbox / Radio */
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    .form-check-input {
+        border: 1px solid $blue;
+    }
+}
+
+/* Responsive */
+@media(max-width:900px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+}

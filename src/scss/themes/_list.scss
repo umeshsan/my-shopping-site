@@ -1,0 +1,205 @@
+// Import variables and mixins
+@use "./vars"as *;
+@use "./mixins"as *;
+@use "sass:color";
+
+:root {
+    --bg: #eff8fe;
+    --border: #dbeaf5;
+}
+
+/* Layout */
+.list-container {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+}
+
+.category-menu,
+.sub-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.cat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.cat-item:hover {
+    background: #dff1fb;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Sub menus */
+.sub-menu {
+    max-height: 0;
+    /* hidden by default */
+    overflow: hidden;
+    padding-left: 12px;
+    transition: max-height 0.4s ease;
+}
+
+.sub-menu.open {
+    max-height: 500px !important;
+    /* slide down */
+}
+
+.cat-item.open .arrow {
+    transform: rotate(90deg);
+}
+
+/* Leaf items */
+.leaf {
+    padding: 6px 6px 6px 8px;
+    font-size: 13px;
+}
+
+
+
+/* LEFT FILTER */
+.filter-box {
+    background: var(--bg);
+    padding: 15px;
+    border-radius: 10px;height: fit-content;
+}
+
+.filter-block {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .view-toggle {
+        font-size: 12px;
+    }
+
+    li a {
+        color: $dark;
+    }
+}
+
+.filter-block h4 {
+    margin: 0 0 10px;
+    color: $blue;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.filter-block label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.filter-block input[type="checkbox"],
+.filter-block input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* Category list */
+.category-list li {
+    list-style: none;
+    font-size: 13px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.view-less {
+    color: $blue;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Price */
+.price-range {
+    display: flex;
+    gap: 8px;
+}
+
+.price-range input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+/* RIGHT CONTENT */
+.list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-card h5 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+}
+
+.product-card .price {
+    color: $blue;
+    font-weight: bold;
+    font-size: 14px;
+}
