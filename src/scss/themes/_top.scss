@@ -52,13 +52,14 @@
 }
 
 .sc-product-listing {
-    .product-catogeries {
-        a {
+    .nav {
+        button {
             transition: $default-transition;
             background: transparent;
             border-radius: 6px;
             padding: 3px 8px;
             color: $dark;
+            margin-right: 6px;
 
             &.active,
             &:hover {

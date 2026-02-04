@@ -7,29 +7,27 @@
 	<meta name="keywords" content="My Shopping Site">
 	<title>My Shopping Site</title>
 
-	<!--Favicon-->
-	<link rel="icon" type="image/png" href="dist/img/site-icon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="dist/img/site-icon/favicon.svg" />
-	<link rel="shortcut icon" href="dist/img/site-icon/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="dist/img/site-icon/apple-touch-icon.png" />
-	<link rel="web-app-manifest" sizes="192x192" href="dist/img/site-icon/web-app-manifest-192x192.png" />
-	<link rel="web-app-manifest" sizes="512x512" href="dist/img/site-icon/web-app-manifest-512x512.png" />
-	<link rel="manifest" href="dist/img/site-icon/site.webmanifest" />
+<!--Favicon-->
+<link rel="icon" type="image/png" href="dist/img/site-icon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="dist/img/site-icon/favicon.svg" />
+<link rel="shortcut icon" href="dist/img/site-icon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="dist/img/site-icon/apple-touch-icon.png" />
+<link rel="manifest" href="dist/img/site-icon/site.webmanifest" />
 
-	<!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="dist/css/thirdparty/bootstrap-5.3.8/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/css/thirdparty/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="dist/css/thirdparty/swiper-11.2.10/swiper-bundle.min.css">
-    <link rel="stylesheet" href="dist/css/thirdparty/aos-2.3.1/aos.min.css">
-    <link rel="stylesheet" href="dist/css/thirdparty/fancybox-6.1.7/fancybox.min.css">
-    <link rel="stylesheet" href="dist/css/theme.min.css">
-    <?php
-    $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
-    ?>
+<link rel="stylesheet" href="dist/css/thirdparty/bootstrap-5.3.8/bootstrap.min.css">
+<link rel="stylesheet" href="dist/css/thirdparty/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+<link rel="stylesheet" href="dist/css/thirdparty/swiper-11.2.10/swiper-bundle.min.css">
+<link rel="stylesheet" href="dist/css/thirdparty/aos-2.3.1/aos.min.css">
+<link rel="stylesheet" href="dist/css/thirdparty/fancybox-6.1.7/fancybox.min.css">
+<link rel="stylesheet" href="dist/css/theme.min.css">
+<?php
+$pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
+?>
 </head>
 
 <header>
@@ -41,11 +39,11 @@
 			<li class="nav-item">
 				<a class="nav-link" href="registration.php"><i class="me-1 bi-journal-check"></i>登録無料</a>
 			</li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="me-1 bi-box-fill"></i>購入した商品</a>
-            </li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="me-1 bi-cart3"></i>カート</a>
+				<a class="nav-link" href="#"><i class="me-1 bi-box-fill"></i>購入した商品</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link cart-fab" id="cartFab" href="#"><i class="me-1 bi-cart"></i><span id="cartCount">2</span>カート</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#"><i class="me-1 bi-heart-fill"></i>お気に入り</a>
@@ -328,15 +326,134 @@
 </header>
 
 <div class="sticky-menu shadow">
-    <a href="#"><i class="bi bi-chat-dots" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"></i></a>
-    <a href="#"><i class="bi bi-wechat" data-bs-toggle="tooltip" data-bs-placement="top" title="WeChat"></i></a>
-    <a href="#"><i class="bi bi-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top" title="Whapsapp"></i></a>
-    <a href="#"><i class="bi bi-cart" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"></i></a>
-    <a href="#"><i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"></i></a>
-    <a href="#"><i class="bi bi-card-checklist" data-bs-toggle="tooltip" data-bs-placement="top" title="Feedback"></i></a>
+	<a href="#" id="chatFab"><i class="bi bi-chat-dots" data-bs-toggle="tooltip" data-bs-placement="top" title="Message"></i></a>
+	<a href="#"><i class="bi bi-wechat" data-bs-toggle="tooltip" data-bs-placement="top" title="WeChat"></i></a>
+	<a href="#"><i class="bi bi-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top" title="Whapsapp"></i></a>
+	<a href="#"><i class="bi bi-cart" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"></i></a>
+	<a href="#"><i class="bi bi-heart" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"></i></a>
+	<a href="#"><i class="bi bi-card-checklist" data-bs-toggle="tooltip" data-bs-placement="top" title="Feedback"></i></a>
 </div>
+
 <div class="topTop shadow-sm">
-    <i class="bi bi-arrow-bar-up" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top "></i>
+	<i class="bi bi-arrow-bar-up" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top "></i>
+</div>
+
+<!-- Chatbot Window -->
+<div class="chat-widget" id="chatWidget">
+	<div class="chat-header">Chat Support</div>
+
+	<div class="chat-body" id="chatBody">
+		<p><strong>Bot:</strong> Hi 👋 How can I help you?</p>
+	</div>
+
+	<div class="chat-input">
+		<input type="text" id="chatInput" placeholder="Type your message...">
+		<button id="sendBtn">Send</button>
+	</div>
+</div>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar shadow" id="cartSidebar">
+	<!-- Header -->
+	<div class="cart-header">
+		<h5 class="mb-0" id="cartHeader">Your cart (2 items)</h5>
+		<button class="close-btn" id="closeCart">×</button>
+	</div>
+
+	<!-- Body -->
+	<div class="cart-items" id="cartItems">
+		<!-- Cart Item Example -->
+		<div class="cart-item">
+			<img src="dist/img/p4.jpg" alt="Product Image" class="item-img">
+			<div class="item-details">
+				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="item-price d-flex align-items-baseline gap-2">
+					<span class="discounted-price fs-2 fw-bold text-danger">$80</span>
+					<span class="fs-6 d-flex gap-1">
+						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="discount-percentage text-dark">-20%</small>
+					</span>
+				</p>
+				<p class="item-desc line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<div class="item-actions">
+					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
+					<input type="number" value="1" min="1">
+					<button class="qty-btn" onclick="changeItemQty(this, 1)"><i class="bi bi-plus-lg text-dark"></i></button>
+					<button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash text-danger"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-item">
+			<img src="dist/img/p7.jpg" alt="Product Image" class="item-img">
+			<div class="item-details">
+				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="item-price d-flex align-items-baseline gap-2">
+					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="fs-6 d-flex gap-1">
+						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="discount-percentage text-dark">-10%</small>
+					</span>
+				</p>
+				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<div class="item-actions">
+					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
+					<input type="number" value="1" min="1">
+					<button class="qty-btn" onclick="changeItemQty(this, 1)"><i class="bi bi-plus-lg text-dark"></i></button>
+					<button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash text-danger"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-item">
+			<img src="dist/img/p6.jpg" alt="Product Image" class="item-img">
+			<div class="item-details">
+				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="item-price d-flex align-items-baseline gap-2">
+					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="fs-6 d-flex gap-1">
+						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="discount-percentage text-dark">-10%</small>
+					</span>
+				</p>
+				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<div class="item-actions">
+					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
+					<input type="number" value="1" min="1">
+					<button class="qty-btn" onclick="changeItemQty(this, 1)"><i class="bi bi-plus-lg text-dark"></i></button>
+					<button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash text-danger"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-item">
+			<img src="dist/img/p2.jpg" alt="Product Image" class="item-img">
+			<div class="item-details">
+				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="item-price d-flex align-items-baseline gap-2">
+					<span class="discounted-price fs-2 fw-bold text-danger">$90</span>
+					<span class="fs-6 d-flex gap-1">
+						<small class="original-price text-decoration-line-through text-muted">$100</small>
+						<small class="discount-percentage text-dark">-10%</small>
+					</span>
+				</p>
+				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<div class="item-actions">
+					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
+					<input type="number" value="1" min="1">
+					<button class="qty-btn" onclick="changeItemQty(this, 1)"><i class="bi bi-plus-lg text-dark"></i></button>
+					<button class="remove-btn" onclick="removeItem(this)"><i class="bi bi-trash text-danger"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="cart-footer">
+		<p>Subtotal: $ <span id="cartSubtotal">2000</span></p>
+		<button class="view-cart-btn">View My Cart</button>
+		<button class="checkout-btn">Go to Checkout</button>
+	</div>
 </div>
 
 <body class="<?= $pageClass ?>">

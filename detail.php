@@ -11,7 +11,7 @@
 		</nav>
 
 		<div class="detail-wrapper">
-			<div class="d-flex gap-5">
+			<div class="d-flex gap-5 mb-5">
 				<div class="detail-image-container">
 					<div class="swiper main-swiper">
 						<div class="swiper-wrapper">
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 
-				<div class="others-information flex-grow shadow">
+				<div class="others-information shadow">
 					<div class="delivery-box">
 
 						<div class="delivery-header">
@@ -165,25 +165,17 @@
 				</div>
 			</div>
 
-			<div class="product-tabs">
-				<div class="tab-header">
-					<button class="tab-btn active" data-tab="description">Description</button>
-					<button class="tab-btn" data-tab="specifications">Specifications</button>
-					<button class="tab-btn" data-tab="reviews">Product Reviews</button>
-					<button class="tab-btn" data-tab="ratings">Ratings & Reviews</button>
-					<button class="tab-btn" data-tab="questions">Q & A</button>
-				</div>
-
-				<div class="tab-content active" id="description">
-					<h3>Product Description</h3>
+			<div class="more-information mb-5 mt-5">
+				<div class="description-block mb-4 bg-light border rounded-3 p-3">
+					<div class="fs-5 fw-bold mb-3">Product Description</div>
 					<p>
 						This product is made from high-quality materials and designed for everyday use.
 						It offers durability, comfort, and modern style.
 					</p>
 				</div>
 
-				<div class="tab-content" id="specifications">
-					<h3>Specifications</h3>
+				<div class="specifications-block mb-4 bg-light border rounded-3 p-3">
+					<div class="fs-5 fw-bold mb-3">Specifications</div>
 					<table class="spec-table">
 						<tr>
 							<th>Material</th>
@@ -204,8 +196,8 @@
 					</table>
 				</div>
 
-				<div class="tab-content" id="reviews">
-					<h3>Product Reviews</h3>
+				<div class="reviews-block mb-4 bg-light border rounded-3 p-3">
+					<div class="fs-5 fw-bold mb-3">Product Reviews</div>
 					<div class="review-item">
 						<strong>John Doe</strong>
 						<p>Great quality and fast delivery!</p>
@@ -216,14 +208,14 @@
 					</div>
 				</div>
 
-				<div class="tab-content" id="ratings">
-					<h3>Ratings & Reviews</h3>
+				<div class="ratings-block mb-4 bg-light border rounded-3 p-3">
+					<div class="fs-5 fw-bold mb-3">Ratings & Reviews</div>
 					<p>⭐⭐⭐⭐☆ (4.2 / 5)</p>
 					<p>Based on 124 customer ratings</p>
 				</div>
 
-				<div class="tab-content" id="questions">
-					<h3>Questions about the Product</h3>
+				<div class="questions-block mb-4 bg-light border rounded-3 p-3">
+					<div class="fs-5 fw-bold mb-3">Questions about the Product</div>
 					<div class="qa-item">
 						<strong>Q:</strong> Is this product washable?<br>
 						<strong>A:</strong> Yes, it is machine washable.
