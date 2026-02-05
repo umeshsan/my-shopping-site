@@ -5,9 +5,14 @@
 
 .sc-heading {
     background: $lightBlue;
+    background-image: repeating-linear-gradient(135deg,
+        rgba(0, 191, 166, 0.05),
+        rgba(0, 191, 166, 0.05) 2px,
+        transparent 2px,
+        transparent 10px);
     color: $blue;
-    padding: 15px 20px;
-    font-size: 24px;
+    padding: 0.5rem 1rem;
+    font-size: 32px;
     font-weight: bold;
 }
 

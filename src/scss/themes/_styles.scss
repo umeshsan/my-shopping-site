@@ -66,7 +66,7 @@ section {
     --padding-y: 60px;
     padding-block: var(--padding-y);
 
-    @include respond-to(xxl) {
+    @include respond-to(2xl) {
         --padding-y: 30px;
     }
 }
@@ -148,7 +148,7 @@ button {
 }
 
 .custom-container {
-    --bs-gutter-x: 8rem;
+    --bs-gutter-x: 10rem;
     --bs-gutter-y: 0;
     width: 100%;
     max-width: calc(1600px + var(--bs-gutter-x));
@@ -157,6 +157,14 @@ button {
     margin-right: auto;
     margin-left: auto;
     transition: $default-transition;
+
+    @include respond-to(3xl) {
+        --bs-gutter-x: 7rem;
+    }
+
+    @include respond-to(2xl) {
+        --bs-gutter-x: 5rem;
+    }
 
     @include respond-to(xl) {
         --bs-gutter-x: 2.5rem;
@@ -219,6 +227,9 @@ main {
 
 .img-box {
     overflow: hidden;
+    box-shadow: var(--bs-box-shadow) !important;
+    background-color: $offWhite;
+    border-radius: 16px;
 
     img {
         width: 100%;
@@ -227,6 +238,22 @@ main {
 
     &:hover img {
         transform: scale(1.1);
+    }
+}
+
+.info-wrap {
+    padding: 0.5rem 0.75rem;
+
+    .product-title {
+        font-size: 13px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    .rating .text-muted {
+        font-size: 12px;
     }
 }
 

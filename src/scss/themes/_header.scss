@@ -120,6 +120,7 @@ header {
             padding-block: 0.75rem;
             border-left: 1px solid white;
             border-right: 1px solid #e7e7e7;
+            font-size: 14px;
         }
 
         li:first-child a {
@@ -544,6 +545,10 @@ header {
         gap: 10px;
         padding: 10px 0;
         border-bottom: 1px solid #ccc;
+    }
+
+    .info-wrap {
+        padding: 0 0.75rem 0 0;
     }
 
     .item-img {

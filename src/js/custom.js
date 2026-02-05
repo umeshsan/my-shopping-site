@@ -67,19 +67,6 @@ $(document).ready(function() {
     });
 
 
-    // Fancybox
-    Fancybox.bind("[data-fancybox]", {
-        Carousel: {
-            Zoomable: {
-                Panzoom: {
-                    clickAction: "iterateZoom",
-                    maxScale: 2,
-                },
-            },
-        },
-    });
-
-
     // matchheight
     $('.matchHeightPara').matchHeight();
 
@@ -96,6 +83,19 @@ $(document).ready(function() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         }
+    });
+
+
+    // Fancybox
+    Fancybox.bind("[data-fancybox]", {
+        Carousel: {
+            Zoomable: {
+                Panzoom: {
+                    clickAction: "iterateZoom",
+                    maxScale: 2,
+                },
+            },
+        },
     });
 
 

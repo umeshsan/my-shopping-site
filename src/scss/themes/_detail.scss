@@ -5,24 +5,56 @@
 
 .detail-image-container {
     max-width: 500px;
-    margin-bottom: 3rem;
-    width: 100%;
+    margin-bottom: 0.5rem;
+
+    @include respond-to(2xl) {
+        max-width: 400px;
+    }
+
+    @include respond-to(xl) {
+        max-width: 700px;
+        width: 100%;
+    }
 }
 
 .detail-information-container {
-    //max-width: 40%;
     width: 100%;
     flex: 1;
+
+    @include respond-to(xl) {
+        padding-right: 1.5rem;
+    }
+}
+
+#deliveryIcon {
+    position: absolute;
+    right: 3rem;
+    top: 0;
+    cursor: pointer;
 }
 
 .others-information {
-    background: $lightBlue;
     padding: 20px;
     width: 100%;
-    max-width: 360px;
+    max-width: 300px;
+    height: fit-content;
+    background: $lightBlue;
     border-radius: 12px;
-    position: sticky;
-    top: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    display: flex;
+    //transform: scale(0.8) translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 999;
+
+    &.active {
+        display: flex !important;
+        transform: scale(1) translateY(0);
+        pointer-events: auto;
+        position: fixed;
+        right: 50px;
+    }
 }
 
 .main-swiper {
@@ -178,6 +210,10 @@
     border-bottom: 1px solid #eee;
 }
 
+.delivery-box {
+    font-size: 13px;
+}
+
 .delivery-header {
     display: flex;
     justify-content: space-between;
@@ -185,21 +221,15 @@
     margin-bottom: 10px;
 }
 
-.delivery-header h3 {
-    font-size: 16px;
-}
-
 .change-btn {
     background: none;
     border: none;
     color: #007bff;
     cursor: pointer;
-    font-size: 14px;
 }
 
 .delivery-info p {
     margin: 5px 0;
-    font-size: 14px;
 }
 
 .delivery-edit {

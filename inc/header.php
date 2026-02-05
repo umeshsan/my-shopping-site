@@ -46,7 +46,7 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 				<a class="nav-link cart-fab" id="cartFab" href="#"><i class="me-1 bi-cart"></i><span id="cartCount">2</span>カート</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="me-1 bi-heart-fill"></i>お気に入り</a>
+				<a class="nav-link" href="favorite.php"><i class="me-1 bi-heart-fill"></i>お気に入り</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#"><i class="me-1 bi-info-circle-fill"></i>Help & Support</a>
@@ -354,7 +354,7 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 
 
 <div class="cart-sidebar shadow" id="cartSidebar">
-	<!-- Header -->
+
 	<div class="cart-header">
 		<h5 class="mb-0" id="cartHeader">Your cart (2 items)</h5>
 		<button class="close-btn" id="closeCart">×</button>
@@ -364,19 +364,30 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 	<div class="cart-items" id="cartItems">
 
 		<div class="cart-item">
-			<a href="dist/img/p4.jpg" data-fancybox="gallery" data-caption="Caption #1">
-				<img src="dist/img/p4.jpg" class="item-img" />
-			</a>
-			<div class="item-details">
-				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
-				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">¥80</span>
+			<figure class="ratio ratio-1x1 overflow-hidden mb-1">
+				<a href="dist/img/p4.jpg" data-fancybox="gallery" data-caption="Caption #1">
+					<img src="dist/img/p4.jpg" class="item-img object-fit-cover" />
+				</a>
+			</figure>
+			<div class="info-wrap">
+				<p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="d-flex align-items-baseline gap-2 product-price">
+					<span class="discounted-price fs-4 fw-bold text-danger">¥60</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">¥100</small>
-						<small class="discount-percentage text-dark">-20%</small>
+						<small class="original-price text-decoration-line-through text-muted">¥120</small>
+						<small class="discount-percentage text-dark">-50%</small>
 					</span>
 				</p>
-				<p class="item-desc line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="rating">
+					<span class="rating-stars text-warning">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-half"></i>
+						<i class="bi bi-star"></i>
+						<i class="bi bi-starl"></i>
+						<i class="bi bi-star"></i>
+					</span>
+					<span class="text-muted">(50)</span>
+				</p>
 				<div class="item-actions">
 					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
 					<input type="number" value="1" min="1">
@@ -387,19 +398,30 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<a href="dist/img/p7.jpg" data-fancybox="gallery" data-caption="Caption #1">
-				<img src="dist/img/p7.jpg" class="item-img" />
-			</a>
-			<div class="item-details">
-				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
-				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
+			<figure class="ratio ratio-1x1 overflow-hidden mb-1">
+				<a href="dist/img/p7.jpg" data-fancybox="gallery" data-caption="Caption #1">
+					<img src="dist/img/p7.jpg" class="item-img object-fit-cover" />
+				</a>
+			</figure>
+			<div class="info-wrap">
+				<p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="d-flex align-items-baseline gap-2 product-price">
+					<span class="discounted-price fs-4 fw-bold text-danger">¥60</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">¥100</small>
-						<small class="discount-percentage text-dark">-10%</small>
+						<small class="original-price text-decoration-line-through text-muted">¥120</small>
+						<small class="discount-percentage text-dark">-50%</small>
 					</span>
 				</p>
-				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="rating">
+					<span class="rating-stars text-warning">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-half"></i>
+						<i class="bi bi-star"></i>
+						<i class="bi bi-starl"></i>
+						<i class="bi bi-star"></i>
+					</span>
+					<span class="text-muted">(50)</span>
+				</p>
 				<div class="item-actions">
 					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
 					<input type="number" value="1" min="1">
@@ -410,19 +432,30 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<a href="dist/img/p6.jpg" data-fancybox="gallery" data-caption="Caption #1">
-				<img src="dist/img/p6.jpg" class="item-img" />
-			</a>
-			<div class="item-details">
-				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
-				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
+			<figure class="ratio ratio-1x1 overflow-hidden mb-1">
+				<a href="dist/img/p6.jpg" data-fancybox="gallery" data-caption="Caption #1">
+					<img src="dist/img/p6.jpg" class="item-img object-fit-cover" />
+				</a>
+			</figure>
+			<div class="info-wrap">
+				<p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="d-flex align-items-baseline gap-2 product-price">
+					<span class="discounted-price fs-4 fw-bold text-danger">¥60</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">¥100</small>
-						<small class="discount-percentage text-dark">-10%</small>
+						<small class="original-price text-decoration-line-through text-muted">¥120</small>
+						<small class="discount-percentage text-dark">-50%</small>
 					</span>
 				</p>
-				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="rating">
+					<span class="rating-stars text-warning">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-half"></i>
+						<i class="bi bi-star"></i>
+						<i class="bi bi-starl"></i>
+						<i class="bi bi-star"></i>
+					</span>
+					<span class="text-muted">(50)</span>
+				</p>
 				<div class="item-actions">
 					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
 					<input type="number" value="1" min="1">
@@ -433,19 +466,30 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 		</div>
 
 		<div class="cart-item">
-			<a href="dist/img/p2.jpg" data-fancybox="gallery" data-caption="Caption #1">
-				<img src="dist/img/p2.jpg" class="item-img" />
-			</a>
-			<div class="item-details">
-				<p class="item-name line-clamp-1">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
-				<p class="item-price d-flex align-items-baseline gap-2">
-					<span class="discounted-price fs-2 fw-bold text-danger">¥90</span>
+			<figure class="ratio ratio-1x1 overflow-hidden mb-1">
+				<a href="dist/img/p2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+					<img src="dist/img/p2.jpg" class="item-img object-fit-cover" />
+				</a>
+			</figure>
+			<div class="info-wrap">
+				<p class="product-title text-dark line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="d-flex align-items-baseline gap-2 product-price">
+					<span class="discounted-price fs-4 fw-bold text-danger">¥60</span>
 					<span class="fs-6 d-flex gap-1">
-						<small class="original-price text-decoration-line-through text-muted">¥100</small>
-						<small class="discount-percentage text-dark">-10%</small>
+						<small class="original-price text-decoration-line-through text-muted">¥120</small>
+						<small class="discount-percentage text-dark">-50%</small>
 					</span>
 				</p>
-				<p class="item-desc  line-clamp-2">3部万ムス演捜チムキフ能選さつび合項クネイフ質待わかん掲過コケホヨ座負ごぜおわ乗独ド法件ねぱんず誌渡ょぎはさ乗覇松院ごゆよに。</p>
+				<p class="rating">
+					<span class="rating-stars text-warning">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-half"></i>
+						<i class="bi bi-star"></i>
+						<i class="bi bi-starl"></i>
+						<i class="bi bi-star"></i>
+					</span>
+					<span class="text-muted">(50)</span>
+				</p>
 				<div class="item-actions">
 					<button class="qty-btn" onclick="changeItemQty(this, -1)"><i class="bi bi-dash-lg text-dark"></i></button>
 					<input type="number" value="1" min="1">
@@ -455,7 +499,6 @@ $pageClass = basename($_SERVER['PHP_SELF'], '.php') ?: 'index';
 			</div>
 		</div>
 	</div>
-
 
 	<div class="cart-footer">
 		<p class="d-flex align-items-center justify-content-between">Subtotal: <span class="fs-5">¥<span id="cartSubtotal">2000</span></span></p>
